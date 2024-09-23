@@ -6,14 +6,14 @@ import AddComment from './components/AddComment';
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen bg-stone-200">
         <Header />
-        <div className="container mx-auto px-4 py-8">
+        <main className="container mx-auto px-4 py-8">
           <Routes>
             <Route path="/" element={<CommentList />} />
             <Route path="/add" element={<AddComment />} />
           </Routes>
-        </div>
+        </main>
       </div>
     </Router>
   );
